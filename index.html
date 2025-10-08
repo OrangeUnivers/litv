@@ -1,0 +1,696 @@
+<html>
+<head>
+	<style>
+		body {
+			font-family: Torus;
+		}
+		#village3,
+		#village4 {
+			display: none;
+		}
+		#all {
+			display: flex;
+			flex-direction: column;
+			padding-left: 1rem;
+			gap: 0.2rem;
+		}
+		#all>div>.mod {
+			display: inline-block;
+			width: 100%;
+			border-radius: 0.2rem;
+		}
+		#all>div>.mod.added {
+			background-color: #b6ffb7;
+		}
+		#all>div>.mod.removed {
+			background-color: #ffb6b6;
+		}
+		#all>div>.mod>.icon {
+			width: 1rem;
+			height: 0.6em;
+			padding-bottom: 0.4rem;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: 700;
+            user-select: none;
+            -webkit-user-drag: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+		}
+		#all>div>.mod.added>.icon {
+			color: #00c503;
+		}
+		#all>div>.mod.removed>.icon {
+			color: #ff0000;
+		}
+	</style>
+</head>	
+<body>
+	<div id="all">
+
+	</div>
+	<ul id="village3">
+	<li>Abnormals Delight</li>
+	<li>Advancement Plaques [Neo/Forge]</li>
+	<li>Akashic Tome</li>
+	<li>Alex's Delight</li>
+	<li>Alex's Mobs</li>
+	<li>Amplified Nether</li>
+	<li>ApexCore</li>
+	<li>AppleSkin</li>
+	<li>Aquaculture 2</li>
+	<li>Architectury API</li>
+	<li>Armourer's Workshop</li>
+	<li>Art of Forging</li>
+	<li>Artifacts</li>
+	<li>AttributeFix</li>
+	<li>Auto Third Person</li>
+	<li>AutoRegLib</li>
+	<li>Autumnity</li>
+	<li>Balm</li>
+	<li>Beautify!</li>
+	<li>Better Advancements</li>
+	<li>Better Combat [Fabric &amp; Forge]</li>
+	<li>Better Safe Bed</li>
+	<li>Better Statistics Screen</li>
+	<li>BisectHosting Server Integration Menu [FORGE]</li>
+	<li>BlockUI</li>
+	<li>Blueprint</li>
+	<li>Bookshelf</li>
+	<li>Brewin' And Chewin'</li>
+	<li>Builder's Delight (Forge)</li>
+	<li>Builders Crafts &amp; Additions</li>
+	<li>Buzzier Bees</li>
+	<li>Caelus API</li>
+	<li>Catalogue</li>
+	<li>Chalk</li>
+	<li>Charm of Undying (Fabric/Forge/Quilt)</li>
+	<li>Chef's Delight [Forge] - Farmer's Delight Villagers</li>
+	<li>Cherished Worlds</li>
+	<li>Chimes</li>
+	<li>Chipped</li>
+	<li>Chloride (Embeddium++/Sodium++)</li>
+	<li>Chunk-Pregenerator</li>
+	<li>Citadel</li>
+	<li>Clickable advancements[Forge/Fabric]</li>
+	<li>Cloth Config API (Fabric/Forge/NeoForge)</li>
+	<li>Clumps</li>
+	<li>Collectibles</li>
+	<li>Collector's Album</li>
+	<li>Collector's Reap</li>
+	<li>Comforts (Fabric/Forge/Quilt)</li>
+	<li>Completionist's Index</li>
+	<li>Configuration</li>
+	<li>Configured</li>
+	<li>ConnectedTexturesMod</li>
+	<li>Connectivity</li>
+	<li>Construction Wand</li>
+	<li>Controllable</li>
+	<li>Controlling</li>
+	<li>Cooking for Blockheads</li>
+	<li>Copper Drops</li>
+	<li>Corail Tombstone</li>
+	<li>CorgiLib</li>
+	<li>Cosmetic Armor Reworked</li>
+	<li>Crafting Tweaks</li>
+	<li>Create</li>
+	<li>Create Railways Navigator</li>
+	<li>Create Slice &amp; Dice</li>
+	<li>Create Stuff 'N Additions</li>
+	<li>Create: Bells &amp; Whistles</li>
+	<li>Create: Central Kitchen</li>
+	<li>Create: Design n' Decor</li>
+	<li>Create: Dynamic Village</li>
+	<li>Create: Enchantment Industry</li>
+	<li>Create: Steam 'n' Rails</li>
+	<li>CreativeCore</li>
+	<li>Creeper Overhaul</li>
+	<li>Croptopia</li>
+	<li>Cucumber Library</li>
+	<li>Cupboard</li>
+	<li>Curios API (Forge/NeoForge)</li>
+	<li>Daily Rewards</li>
+	<li>Dark Paintings</li>
+	<li>Deep Pouches</li>
+	<li>Default Options</li>
+	<li>Detail Armor Bar [Forge]</li>
+	<li>Doggy Talents Next</li>
+	<li>Domestication Innovation</li>
+	<li>Domum Ornamentum</li>
+	<li>Drawers Tooltip</li>
+	<li>Drippy Loading Screen</li>
+	<li>Dynamic View[Forge]</li>
+	<li>Easier Sleeping</li>
+	<li>Elytra Slot</li>
+	<li>Embeddium</li>
+	<li>Enchantment Descriptions</li>
+	<li>Entity Collision FPS Fix</li>
+	<li>Entity Culling Fabric/Forge</li>
+	<li>Epic Knights: Shields, Armor and Weapons [Fabric/Forge/NeoForge]</li>
+	<li>Everything is Copper</li>
+	<li>ExpandAbility</li>
+	<li>Explorer's Compass</li>
+	<li>Extreme sound muffler - (Neo)Forge</li>
+	<li>FTB Essentials (Forge &amp; Fabric)</li>
+	<li>FTB Library (Forge)</li>
+	<li>FTB Quests (Forge)</li>
+	<li>FTB Teams (Forge)</li>
+	<li>FTB Ultimine</li>
+	<li>FancyMenu</li>
+	<li>Fantasy's Furniture</li>
+	<li>Farmer's Delight</li>
+	<li>Farmer's Respite</li>
+	<li>Farsight [Forge/Neo]</li>
+	<li>Fast Async World Save[Forge/Fabric]</li>
+	<li>Fast Leaf Decay</li>
+	<li>FastFurnace</li>
+	<li>FastSuite</li>
+	<li>FastWorkbench</li>
+	<li>Fastload</li>
+	<li>FerriteCore ((Neo)Forge)</li>
+	<li>Floor Mats</li>
+	<li>Forgiving Void</li>
+	<li>FramedBlocks</li>
+	<li>Gadgets Against Grind</li>
+	<li>GeckoLib</li>
+	<li>Goblin Traders</li>
+	<li>Golems Are Friends Not Fodder</li>
+	<li>Guard Villagers</li>
+	<li>Handcrafted</li>
+	<li>Haunted Harvest</li>
+	<li>Health Overlay (Forge)</li>
+	<li>Hey Berry! SHUT UP</li>
+	<li>Human Companions</li>
+	<li>I Know What I'm Doing (IKWID)</li>
+	<li>Iceberg [Neo/Forge]</li>
+	<li>Immersive Aircraft [Fabric/Forge]</li>
+	<li>Immersive Melodies [Fabric/Forge]</li>
+	<li>Incubation</li>
+	<li>InsaneLib</li>
+	<li>Integrated API</li>
+	<li>Integrated Dungeons and Structures</li>
+	<li>Inventory Sorter</li>
+	<li>It Takes a Pillage</li>
+	<li>Italian's Delight</li>
+	<li>Item Borders</li>
+	<li>Item Filters</li>
+	<li>Item Highlighter [Neo/Forge]</li>
+	<li>Item Production Lib</li>
+	<li>ItemPhysic Lite</li>
+	<li>Jade Addons (Neo/Forge)</li>
+	<li>Jade 🔍</li>
+	<li>JadeColonies</li>
+	<li>Jumpy Boats</li>
+	<li>Just Enough Items (JEI)</li>
+	<li>Just Enough Professions (JEP)</li>
+	<li>KleeSlabs</li>
+	<li>Konkrete [Forge/NeoForge]</li>
+	<li>Kotlin for Forge</li>
+	<li>KubeJS</li>
+	<li>Lazy DataFixerUpper(LazyDFU) [FORGE]</li>
+	<li>Legendary Tooltips [Neo/Forge]</li>
+	<li>LibX</li>
+	<li>Light Overlay (Rift/Forge/Fabric)</li>
+	<li>Little Contraptions</li>
+	<li>Little Logistics</li>
+	<li>Log Begone</li>
+	<li>Login Protection[Forge/Fabric]</li>
+	<li>Loot Beams: Relooted!</li>
+	<li>Lootr (Forge &amp; NeoForge)</li>
+	<li>Macaw's Bridges</li>
+	<li>Macaw's Fences and Walls</li>
+	<li>Macaw's Lights and Lamps</li>
+	<li>Macaw's Paintings</li>
+	<li>Macaw's Paths and Pavings</li>
+	<li>Macaw's Roofs</li>
+	<li>Macaw's Windows</li>
+	<li>Majrusz Library</li>
+	<li>Majrusz's Progressive Difficulty</li>
+	<li>ManyIdeas Christmas</li>
+	<li>ManyIdeas Core</li>
+	<li>ManyIdeas Halloween</li>
+	<li>Max Health Fix</li>
+	<li>Meet Your Fight</li>
+	<li>Merchant Markers [Neo/Forge]</li>
+	<li>MineColonies</li>
+	<li>ModernFix</li>
+	<li>Money and Sign Shops</li>
+	<li>Monster Plus</li>
+	<li>Moonlight Lib</li>
+	<li>More Villagers</li>
+	<li>Mouse Tweaks</li>
+	<li>Multi-Piston</li>
+	<li>My Server Is Compatible</li>
+	<li>Nature's Compass</li>
+	<li>Neapolitan</li>
+	<li>Neko's Enchanted Books</li>
+	<li>Nether's Delight</li>
+	<li>Netherific</li>
+	<li>Nomadic Tents</li>
+	<li>Nullscape</li>
+	<li>OAuth</li>
+	<li>Oculus</li>
+	<li>Open Parties and Claims</li>
+	<li>Overflowing Bars</li>
+	<li>Passive Skill Tree</li>
+	<li>Patchouli</li>
+	<li>Paxi (Forge)</li>
+	<li>Placebo</li>
+	<li>Player Animator</li>
+	<li>Polymorph (Fabric/Forge/Quilt)</li>
+	<li>Prism [Neo/Forge]</li>
+	<li>Productive Bees</li>
+	<li>Productive Villagers</li>
+	<li>Progressive Bosses</li>
+	<li>Puzzles Lib</li>
+	<li>Quark</li>
+	<li>Quests Additions (Forge)</li>
+	<li>Raided</li>
+	<li>Randomite Classic</li>
+	<li>Remodifier</li>
+	<li>Repurposed Structures (Neoforge/Forge)</li>
+	<li>Resourceful Config</li>
+	<li>Resourceful Lib</li>
+	<li>Respiteful</li>
+	<li>Rhino</li>
+	<li>Rotten Creatures</li>
+	<li>Sapience</li>
+	<li>Second Chance (Forge)</li>
+	<li>SerializationIsBad</li>
+	<li>Server Performance - Smooth Chunk Save[Forge/Fabric]</li>
+	<li>ServerConfig Updater</li>
+	<li>Shulker Box Slot (Fabric/Forge/Quilt)</li>
+	<li>Simple Hats</li>
+	<li>Snowy Spirit</li>
+	<li>Sooty Chimneys</li>
+	<li>Sophisticated Backpacks</li>
+	<li>Sophisticated Core</li>
+	<li>Sophisticated Storage</li>
+	<li>Storage Drawers</li>
+	<li>Storage Racks</li>
+	<li>Structurize</li>
+	<li>Stylecolonies</li>
+	<li>Stylish Effects</li>
+	<li>SuperMartijn642's Core Lib</li>
+	<li>Supplementaries</li>
+	<li>Swashbucklers!</li>
+	<li>Tactical Shield Overhaul[Forge/Neo/Fabric]</li>
+	<li>Tectonic</li>
+	<li>Tetra</li>
+	<li>Tetratic Combat</li>
+	<li>TexTrue's Embeddium Options</li>
+	<li>Tom's Simple Storage Mod</li>
+	<li>Tool Belt</li>
+	<li>Torchmaster</li>
+	<li>Towns and Towers</li>
+	<li>Trading Post</li>
+	<li>TrashSlot</li>
+	<li>Traveler's Titles (Forge/NeoForge)</li>
+	<li>Upgrade Aquatic</li>
+	<li>Upgraded Core</li>
+	<li>Upgraded Netherite</li>
+	<li>Uppers</li>
+	<li>Useful Hats</li>
+	<li>V-Tweaks</li>
+	<li>Village Artifacts</li>
+	<li>Villager Comfort</li>
+	<li>Villagers Sell Animals [NoCube's Mods]</li>
+	<li>Visual Workbench</li>
+	<li>Water Strainer</li>
+	<li>Waystones</li>
+	<li>Xaero's Minimap</li>
+	<li>Xaero's World Map</li>
+	<li>XaeroPlus</li>
+	<li>YUNG's API (Forge/NeoForge)</li>
+	<li>YUNG's Better Desert Temples (Forge/NeoForge)</li>
+	<li>YUNG's Better Dungeons (Forge/NeoForge)</li>
+	<li>YUNG's Better Mineshafts (Forge/NeoForge)</li>
+	<li>YUNG's Better Nether Fortresses (Forge/NeoForge)</li>
+	<li>YUNG's Better Ocean Monuments (Forge/NeoForge)</li>
+	<li>YUNG's Better Strongholds (Forge/NeoForge)</li>
+	<li>YUNG's Better Witch Huts (Forge/NeoForge)</li>
+	<li>YUNG's Extras (Forge/NeoForge)</li>
+	<li>Yeetus Experimentus</li>
+	<li>mutil</li>
+</ul>
+	<ul id="village4">
+	<li>Advanced Mining Dimension</li>
+	<li>AltOriginGui</li>
+	<li>AmbientSounds</li>
+	<li>Amendments</li>
+	<li>Amplified Nether</li>
+	<li>Animation Overhaul</li>
+	<li>ApexCore</li>
+	<li>AppleSkin</li>
+	<li>Aquaculture 2</li>
+	<li>Aquaculture Delight</li>
+	<li>Architectury</li>
+	<li>Armourer's Workshop</li>
+	<li>Artifacts</li>
+	<li>AstikorCarts Redux</li>
+	<li>Athena</li>
+	<li>AttributeFix</li>
+	<li>BHMenu</li>
+	<li>BOZOID</li>
+	<li>Balm</li>
+	<li>Better Advancements</li>
+	<li>Better Archeology</li>
+	<li>Better Safe Bed</li>
+	<li>Blueprint</li>
+	<li>Bookshelf</li>
+	<li>Bountiful</li>
+	<li>Brewin' And Chewin'</li>
+	<li>Build Guide</li>
+	<li>Builders Crafts &amp; Additions</li>
+	<li>Bushes Update</li>
+	<li>Caelus API</li>
+	<li>Calm Mornings</li>
+	<li>Canary</li>
+	<li>Capsule</li>
+	<li>Carrascon Lib</li>
+	<li>Catalogue</li>
+	<li>Chalk</li>
+	<li>Charm of Undying</li>
+	<li>Chefs Delight</li>
+	<li>Chimes</li>
+	<li>Chipped</li>
+	<li>Chloride</li>
+	<li>Citadel</li>
+	<li>Clean Tooltips</li>
+	<li>Cloth Config v10 API</li>
+	<li>Clumps</li>
+	<li>Collectibles</li>
+	<li>Collector's Album</li>
+	<li>Comforts</li>
+	<li>Compact Experience Bottles</li>
+	<li>Configuration</li>
+	<li>Connectivity Mod</li>
+	<li>Construction Wand</li>
+	<li>Controlling</li>
+	<li>CookingForBlockheads</li>
+	<li>Copper Drops</li>
+	<li>Corail Tombstone</li>
+	<li>CosmeticArmorReworked</li>
+	<li>CosmeticArmours</li>
+	<li>Crate Delight</li>
+	<li>Crate Delight: Croptopia</li>
+	<li>Create</li>
+	<li>Create Diesel Generators</li>
+	<li>Create Enchantment Industry</li>
+	<li>Create Jetpack</li>
+	<li>Create Ore Excavation</li>
+	<li>Create Railways Navigator</li>
+	<li>Create Slice &amp; Dice</li>
+	<li>Create: Bells &amp; Whistles</li>
+	<li>Create: Central Kitchen</li>
+	<li>Create: Connected</li>
+	<li>Create: Copycats+</li>
+	<li>Create: New Beginnings</li>
+	<li>Create: Vintage</li>
+	<li>Create: Winery</li>
+	<li>CreativeCore</li>
+	<li>Cristel Lib</li>
+	<li>Critters and Companions</li>
+	<li>Croptopia</li>
+	<li>Cucumber Library</li>
+	<li>Cupboard utilities</li>
+	<li>Curios API</li>
+	<li>Daily Rewards</li>
+	<li>DarkPaintings</li>
+	<li>Dawn Of Time</li>
+	<li>Default Options</li>
+	<li>Domum Ornamentum</li>
+	<li>Dungeons Enhanced</li>
+	<li>Dynamic view distance</li>
+	<li>Easy Anvils</li>
+	<li>Easy Villagers</li>
+	<li>Eccentric Tome</li>
+	<li>Elytra Slot</li>
+	<li>Embeddium</li>
+	<li>EnchantmentDescriptions</li>
+	<li>Entity Model Features</li>
+	<li>Entity Texture Features</li>
+	<li>EuphoriaPatcher</li>
+	<li>ExpandAbility</li>
+	<li>Explorer's Compass</li>
+	<li>Extreme Sound Muffler</li>
+	<li>FTB Library</li>
+	<li>FTB Quests</li>
+	<li>FTB Teams</li>
+	<li>FTB Ultimine</li>
+	<li>FTB XMod Compat</li>
+	<li>FancyMenu</li>
+	<li>Fantasy's Furniture</li>
+	<li>Farmer's Croptopia</li>
+	<li>Farmer's Delight</li>
+	<li>Farsight mod</li>
+	<li>Fast Leaf Decay</li>
+	<li>Fast Suite</li>
+	<li>Fast Workbench</li>
+	<li>FastFurnace</li>
+	<li>Fastload-Reforged</li>
+	<li>Ferrite Core</li>
+	<li>Feur Dimensional Skyland</li>
+	<li>Fireproof Boats</li>
+	<li>Floor Mats</li>
+	<li>Floralis</li>
+	<li>Food Effect Tooltips</li>
+	<li>Forgiving Void</li>
+	<li>Framework</li>
+	<li>Functional Storage</li>
+	<li>Fusion</li>
+	<li>Fzzy Config</li>
+	<li>Gadgets Against Grind</li>
+	<li>GeckoLib 4</li>
+	<li>Gliders</li>
+	<li>Goblin Traders</li>
+	<li>Golems Are Friends Not Fodder</li>
+	<li>Gpu memory leak fix</li>
+	<li>Grass Overhaul</li>
+	<li>Guard Villagers</li>
+	<li>Haunted Harvest</li>
+	<li>Hey Berry! SHUT UP</li>
+	<li>Highlighter</li>
+	<li>HopoBetterUnderwaterRuins</li>
+	<li>Iceberg</li>
+	<li>ImmediatelyFast</li>
+	<li>Immersive Aircraft</li>
+	<li>Integrated API</li>
+	<li>Integrated Dungeons and Structures</li>
+	<li>Integrated Villages</li>
+	<li>Iron Ender Chests</li>
+	<li>It Takes A Pillage</li>
+	<li>Item Borders</li>
+	<li>Item Filters</li>
+	<li>Item Production Lib</li>
+	<li>ItemPhysicLite</li>
+	<li>Jade</li>
+	<li>Jade Addons</li>
+	<li>JeremySeq's Damage Indicator</li>
+	<li>Jumpy Boats</li>
+	<li>Just Enough Items</li>
+	<li>Just Enough Professions (JEP)</li>
+	<li>Kambrik</li>
+	<li>Kiwi Library</li>
+	<li>KleeSlabs</li>
+	<li>Konkrete</li>
+	<li>Kotlin for Forge</li>
+	<li>Krypton Reforged</li>
+	<li>KubeJS</li>
+	<li>Labels</li>
+	<li>Lava Fishing</li>
+	<li>Legendary Tooltips</li>
+	<li>LibX</li>
+	<li>Library ferret</li>
+	<li>Light Overlay</li>
+	<li>Lithosphere</li>
+	<li>Lithostitched</li>
+	<li>Little Logistics</li>
+	<li>Load My F***ing Tags</li>
+	<li>Logprot</li>
+	<li>LootBeams</li>
+	<li>LootJS</li>
+	<li>Lootr</li>
+	<li>Macaw's Bridges</li>
+	<li>Macaw's Fences and Walls</li>
+	<li>Macaw's Holidays</li>
+	<li>Macaw's Lights and Lamps</li>
+	<li>Macaw's Paintings</li>
+	<li>Macaw's Paths and Pavings</li>
+	<li>Macaw's Roofs</li>
+	<li>Macaw's Windows</li>
+	<li>Man of Many Planes</li>
+	<li>Mantle</li>
+	<li>MaxHealthFix</li>
+	<li>Melody</li>
+	<li>Merchant Markers</li>
+	<li>MineColonies</li>
+	<li>Miner's Delight</li>
+	<li>Modern Full Bright</li>
+	<li>Modern World Creation</li>
+	<li>ModernFix</li>
+	<li>Money and Sign Shops</li>
+	<li>Moog's End Structures</li>
+	<li>Moonlight Library</li>
+	<li>More Villagers</li>
+	<li>MoreMcmeta</li>
+	<li>MoreMcmeta Emissive Textures Plugin</li>
+	<li>Mouse Tweaks</li>
+	<li>Multi-Piston</li>
+	<li>Nature's Compass</li>
+	<li>Necronomicon</li>
+	<li>Neko's Enchanted Books</li>
+	<li>Nether's Delight</li>
+	<li>No Baby Zombies</li>
+	<li>No Phantoms</li>
+	<li>No Ruined Nether Portals</li>
+	<li>Noisium</li>
+	<li>Nullscape</li>
+	<li>Ocean's Delight</li>
+	<li>Oculus</li>
+	<li>Open Parties and Claims</li>
+	<li>Oreganized</li>
+	<li>Origins</li>
+	<li>Origins: Backgrounds</li>
+	<li>Origins: More Backgrounds</li>
+	<li>Overflowing Bars</li>
+	<li>Passive Skill Tree</li>
+	<li>Patchouli</li>
+	<li>Paxi</li>
+	<li>Placebo</li>
+	<li>Player Animator</li>
+	<li>Player Companions</li>
+	<li>Polymorph</li>
+	<li>Pretty Rain</li>
+	<li>Prism</li>
+	<li>Productive Bees</li>
+	<li>Productive Villagers</li>
+	<li>Puzzles Lib</li>
+	<li>Quark</li>
+	<li>Quark Delight</li>
+	<li>Raw's Visual Keybinder</li>
+	<li>Redwolf Music Expansion</li>
+	<li>Regions Unexplored</li>
+	<li>Resourceful Lib</li>
+	<li>Resourcefulconfig</li>
+	<li>RevampedWolf</li>
+	<li>Rhino</li>
+	<li>Ribbits</li>
+	<li>Rustic Delight</li>
+	<li>Sapience</li>
+	<li>Searchables</li>
+	<li>Second Chance Forge</li>
+	<li>SerializationIsBad</li>
+	<li>ServerConfig Updater</li>
+	<li>Shoulder Surfing Reloaded</li>
+	<li>SimpleHats</li>
+	<li>SmallColonies</li>
+	<li>Smooth Boot (Reloaded)</li>
+	<li>Snowy Spirit</li>
+	<li>Sooty Chimneys</li>
+	<li>Sophisticated Backpacks</li>
+	<li>Sophisticated Core</li>
+	<li>Sophisticated Storage</li>
+	<li>Sophisticated Storage Create Integration</li>
+	<li>Spelunkery</li>
+	<li>Splendid Slimes</li>
+	<li>Spyglass Improvements</li>
+	<li>Stoneholm, Underground Village</li>
+	<li>Stony Cliffs Are Cool</li>
+	<li>Storage Delight</li>
+	<li>Storage Racks</li>
+	<li>Structure Credits</li>
+	<li>Structure Essentials mod</li>
+	<li>Structure Gel API</li>
+	<li>Structurify</li>
+	<li>Structurize</li>
+	<li>Stylish Effects</li>
+	<li>Subtle Effects</li>
+	<li>SuperMartijn642's Config Library</li>
+	<li>SuperMartijn642's Core Lib</li>
+	<li>Supplementaries</li>
+	<li>TerraBlender</li>
+	<li>The Bumblezone</li>
+	<li>Tidal Towns</li>
+	<li>Tinkers' Construct</li>
+	<li>Titanium</li>
+	<li>Titles</li>
+	<li>Toast Control</li>
+	<li>Tom's Simple Storage Mod</li>
+	<li>Tool Belt</li>
+	<li>Torchmaster</li>
+	<li>TownTalk</li>
+	<li>Towns and Towers</li>
+	<li>Trading Post</li>
+	<li>TrashSlot</li>
+	<li>Traveler's Titles</li>
+	<li>UI Library Mod</li>
+	<li>Uppers</li>
+	<li>Useful Hats</li>
+	<li>Useful Spyglass</li>
+	<li>Villagers Sell Animals (by NoCube)</li>
+	<li>Visual Workbench</li>
+	<li>Visuality: Reforged</li>
+	<li>Wall-Jump TXF</li>
+	<li>Waystones</li>
+	<li>Wooden Hopper</li>
+	<li>Workshop for handsome adventurer</li>
+	<li>World Play Time</li>
+	<li>Xaero's Minimap</li>
+	<li>Xaero's World Map</li>
+	<li>YUNG's API</li>
+	<li>YUNG's Better Dungeons</li>
+	<li>YUNG's Better End Island</li>
+	<li>YUNG's Better Nether Fortresses</li>
+	<li>YUNG's Better Ocean Monuments</li>
+	<li>YUNG's Better Strongholds</li>
+	<li>YUNG's Better Witch Huts</li>
+	<li>YUNG's Extras</li>
+	<li>Yeetus Experimentus</li>
+	<li>YetAnotherConfigLib</li>
+	<li>Zeta</li>
+	<li>aleki's Nifty Ships</li>
+	<li>betterfpsdist mod</li>
+	<li>bigger_vanilla_trees-forge</li>
+	<li>clickadv mod</li>
+	<li>fastasyncworldsave mod</li>
+	<li>flib</li>
+	<li>mutil</li>
+	<li>stylecolonies mod</li>
+	<li>villagertools</li>
+</ul>
+<script>
+	const plusSVG = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus"><path d="M5 12h14"/><path d="M12 5v14"/></svg>`;
+	const minusSVG = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg>`;
+    const village3 = document.getElementById("village3");
+    const village4 = document.getElementById("village4");
+
+    const villageMods3Names = Array.from(village3.children).map(mod => mod.innerHTML);
+    const villageMods4Names = Array.from(village4.children).map(mod => mod.innerHTML);
+
+    const incompatible3 = villageMods3Names.filter(name => !villageMods4Names.includes(name));
+    const incompatible4 = villageMods4Names.filter(name => !villageMods3Names.includes(name));
+
+	const allMods = [...new Set([...villageMods3Names, ...villageMods4Names])].sort();
+	let modList = []
+	allMods.forEach(mod => {
+		if (incompatible3.includes(mod)) {
+			modList.push(`<span class="mod removed"><span class="icon">-</span>${mod}</span>`);
+		} else if (incompatible4.includes(mod)) {
+			modList.push(`<span class="mod added"><span class="icon">+</span>${mod}</span>`);
+		} else {
+			modList.push(`<span class="mod neutral"><span class="icon"></span>${mod}</span>`);
+		}
+	});
+	const modListElement = document.getElementById("all");
+	modList.forEach(mod => {
+		let newModElement = document.createElement("div");
+		newModElement.innerHTML = mod;
+		modListElement.append(newModElement);
+	})
+    console.log(incompatible4);
+</script>
+</body></html>
